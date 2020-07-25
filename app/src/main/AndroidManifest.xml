@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xd.drivesafe"
+    android:targetSandboxVersion="1"
+    tools:targetApi="o">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ForgetPassActivity"></activity>
+        <activity
+            android:name=".User.RobiCodeActivity"
+            android:theme="@style/AppTheme.popUpWindow" />
+        <activity android:name=".Reporter.DriverProfileRActivity" />
+        <activity android:name=".Admin.NidVerifiationActivity" />
+        <activity android:name=".Driver.NotificationSettingsActivity" />
+        <activity android:name=".Driver.ReviewActivity" />
+        <activity android:name=".Driver.PointHistoryActivity" />
+        <activity android:name=".Driver.MyIncidentActivity" />
+        <activity android:name=".Driver.MyQRcodeActivity" />
+        <activity android:name=".Admin.SendSMSActivity" />
+        <activity android:name=".Driver.IncidentRulesActivity" />
+        <activity
+            android:name=".Driver.PersonalinformationActivity"
+            android:theme="@style/AppTheme.popUpWindow" />
+        <activity
+            android:name=".User.UserProfileActivity"
+            android:theme="@style/AppTheme.popUpWindow" />
+        <activity android:name=".User.UserRegActivity" />
+        <activity android:name=".User.DriverProfileUserActivity" />
+        <activity android:name=".User.CommentActivity" />
+        <activity android:name=".Reporter.ShowIncidentActivity" />
+        <activity android:name=".Driver.DriverprofileDActivity" />
+        <activity android:name=".Reporter.AllincidentlistRActivity" />
+        <activity android:name=".Reporter.ReportActivity" />
+        <activity android:name=".Admin.ReporterandAdminListActivity" />
+        <activity android:name=".Admin.ApprovepageActivity" />
+        <activity android:name=".Admin.IncidentActivity" />
+        <activity android:name=".Admin.RequestDriverActivity" />
+        <activity android:name=".Admin.DriverlistActivity" />
+        <activity android:name=".Admin.CreateAdminActivity" />
+        <activity android:name=".Admin.CreateReporterActivity" />
+        <activity android:name=".Driver.RegistrationActivity" />
+        <activity
+            android:name=".User.UserMainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Reporter.ReporterMainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Admin.AdminMainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".Driver.MainDriverActivity"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>
